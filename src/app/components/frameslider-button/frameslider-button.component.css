@@ -1,0 +1,16 @@
+.frameslider-button 
+{
+    position: absolute;
+    cursor: pointer;
+}
+
+.frameslider-button-image
+{
+    border-style: solid;
+}
+
+.frameslider-button-label
+{
+    font-family: 'Helvetica Neue';
+    text-align: center;
+}

@@ -1,0 +1,29 @@
+<!-- FrameButton -->
+<div #buttonComponent
+     (click)                   = "fsb_click($pId)" 
+     class                     = "frameslider-button" 
+     [style.padding-left]      = "hPadding | numbersToPixels"
+     [style.padding-right]     = "hPadding | numbersToPixels"
+     [style.padding-top]       = "vPadding | numbersToPixels"
+     [style.padding-bottom]    = "vPadding | numbersToPixels"
+     [style.background-color]  = "bgColor"
+     [style.left]              = "posX | numbersToPixels"
+     [style.top]               = "posY | numbersToPixels"
+>
+    <img #imageElement
+         (load)                = "updateDimensions()"
+         class                 = "frameslider-button-image"
+         [src]                 = "photo" 
+         [style.border-radius] = "rounded | numbersToPixels"
+         [style.border-width]  = "imageBorderWidth | numbersToPixels"
+         [style.border-color]  = "imageBorderColor"
+    >
+    <div #labelElement 
+         class                 = "frameslider-button-label"
+         [style.color]         = "labelColor" 
+         [style.font-size]     = "labelFontSize | numbersToPixels" 
+    >
+        {{ text }}
+    </div>
+</div>
+<!-- End FrameButton -->

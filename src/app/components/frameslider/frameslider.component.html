@@ -1,0 +1,76 @@
+<div #frameslider 
+     class           = "outer-container"
+     (mouseover)     = "fs_mouseover()"
+     (mouseout)      = "fs_mouseout()"
+     (mousemove)     = "fs_mousemove($event)"
+     [style.width]   = "width | numbersToPixels"
+     [style.height]  = "getButtonHeight() | numbersToPixels"
+     [style.opacity] =  "opacity"
+>
+    <div #framesliderContainer
+        class                    = "frameslider-container"
+        [style.width]            = "width | numbersToPixels"
+        [style.height]           = "getButtonHeight() | numbersToPixels"
+        [style.background-color] = "unselectedBackgroundColor"
+    >
+        <div #containerA
+            id    = "containerA"
+            class = "frame-container"
+        >
+            <frameslider-button *ngFor                          = "let fsb of dataSource; let i = index"
+                                (frameClick)                    = "frameButton_click($event)"
+                                id                              = "{{fsb.id}}"
+                                text                            = "{{fsb.text}}"
+                                photo                           = "{{fsb.photo}}"
+                                [label-unselected-color]        = "unselectedLabelColor"
+                                [label-selected-color]          = "selectedLabelColor"
+                                [label-font-size]               = "getFSBLabelFontSize()"
+                                [h-padding]                     = "getButtonHorizontalPadding()"
+                                [v-padding]                     = "getButtonVerticalPadding()"
+                                [unselected-bg-color]           = "unselectedBackgroundColor"
+                                [selected-bg-color]             = "selectedBackgroundColor"
+                                [rounded]                       = "getRoundedButton()"
+                                [unselected-image-border-color] = "unselectedFrameBorderColor"
+                                [selected-image-border-color]   = "selectedFrameBorderColor"
+                                [image-border-width]            = "frameBorder"
+                                [pos-x]                         = "getPosX(i)"
+                                [pos-y]                         = "getPosY(i)"
+                                [selected-id]                   = "selectedButtonId"
+            >
+            </frameslider-button>
+        </div>
+
+        <div #containerB
+            id    = "containerB"
+            class = "frame-container"
+        >
+            <frameslider-button *ngFor                          = "let fsb of dataSource; let i = index"
+                                (frameClick)                    = "frameButton_click($event)"
+                                id                              = "{{fsb.id}}"
+                                text                            = "{{fsb.text}}"
+                                photo                           = "{{fsb.photo}}"
+                                [label-unselected-color]        = "unselectedLabelColor"
+                                [label-selected-color]          = "selectedLabelColor"
+                                [label-font-size]               = "getFSBLabelFontSize()"
+                                [h-padding]                     = "getButtonHorizontalPadding()"
+                                [v-padding]                     = "getButtonVerticalPadding()"
+                                [unselected-bg-color]           = "unselectedBackgroundColor"
+                                [selected-bg-color]             = "selectedBackgroundColor"
+                                [rounded]                       = "getRoundedButton()"
+                                [unselected-image-border-color] = "unselectedFrameBorderColor"
+                                [selected-image-border-color]   = "selectedFrameBorderColor"
+                                [image-border-width]            = "frameBorder"
+                                [pos-x]                         = "getPosX(i)"
+                                [pos-y]                         = "getPosY(i)"
+                                [selected-id]                   = "selectedButtonId"
+            >
+            </frameslider-button>
+        </div>
+
+    </div>
+</div>
+
+<!-- Debug: -->
+<div class = "debug-container">
+   Debug: {{debugMessage}}
+</div>

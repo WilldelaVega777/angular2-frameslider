@@ -1,0 +1,27 @@
+.outer-container
+{
+    background-color:orange;
+    position:relative;
+}
+
+.frameslider-container
+{
+    overflow: hidden;
+    position: absolute;
+}
+
+.frame-container
+{
+    position:absolute;
+}
+
+.debug-container
+{
+    display: none;
+
+    color: firebrick;
+    margin-top: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}

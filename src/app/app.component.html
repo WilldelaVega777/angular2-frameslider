@@ -1,0 +1,26 @@
+<div style="width:100%;text-align:center;">
+    <div style="position:relative;margin: 0 auto;width:600px;">
+        <frameslider #fs
+                    (frame-clicked)                 = "registerFrameClick($event)"
+                    [data-source]                   = "ds"
+                    [rounded-corners]               = "true"
+                    width                           = "600"
+                    opacity                         = "0.8"
+                    image-width                     = "100"
+                    image-height                    = "60"
+                    unselected-background-color     = "#222"
+                    selected-background-color       = "#500204"
+                    unselected-label-color          = "#aaa"
+                    selected-label-color            = "white"
+                    unselected-frame-border-color   = "#ae8913"
+                    selected-frame-border-color     = "#f1c40f"
+                    frame-border                    = "1"
+                    rounded-button                  = "true"
+                    selector-color                  = "white"
+        >
+        </frameslider>
+        <br>
+        <br>
+        <p *ngIf="frameClickedId">Frame Id clicked was: <span class="clicked-id">{{frameClickedId}}</span></p>
+    </div>
+</div>
