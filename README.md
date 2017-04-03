@@ -20,11 +20,11 @@ Read our contributing guidelines and become a contributing member of Angular UI 
 
 
 ## Demo
-Watch the Tree component in action on the [demo page](http://angular-ui-tree.github.io/angular-ui-tree/).
+Watch the Frameslider component in action on the [demo page](http://angular-ui-tree.github.io/angular-ui-tree/).
 
 ## Requirements
 
-- Angularjs
+- Angular 2
 
 ## Usage
 
@@ -80,7 +80,6 @@ In your constructor method add your datasource as an object array as follows...
     }
 ```
 
-Injecting `ui.tree`, `ui-tree-nodes`, `ui-tree-node`, `ui-tree-handle` to your html.
 
 #### HTML 
 ```html
@@ -104,4 +103,5 @@ Injecting `ui.tree`, `ui-tree-nodes`, `ui-tree-node`, `ui-tree-handle` to your h
         >
         </frameslider>
 ```
+
 **Developing Notes:**
