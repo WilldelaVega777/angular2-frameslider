@@ -20,7 +20,7 @@ Feel free to make a pull request if you feel you have something to contribute to
 
 
 ## Demo
-Watch the Frameslider component in action on the [demo page](http://angular-ui-tree.github.io/angular-ui-tree/).
+Watch the Frameslider component in action on the [demo page](https://wvframeslider.firebaseapp.com/).
 
 ## Requirements
 
