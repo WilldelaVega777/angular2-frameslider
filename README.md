@@ -104,4 +104,6 @@ In your constructor method add your datasource as an object array as follows...
         </frameslider>
 ```
 
-**Developing Notes:**
+**Usage:**
+
+(Under Development...)
