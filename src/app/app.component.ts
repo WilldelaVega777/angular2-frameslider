@@ -31,37 +31,37 @@ export class AppComponent
         this.ds = [
             {
                 id        : "001",
-                photo     : "images/re1.jpg",
+                photo     : "/images/re1.jpg",
                 text      : "RE 1"
             },
             {
                 id        : "002",
-                photo     : "images/re2.jpg",
+                photo     : "/images/re2.jpg",
                 text      : "RE 2"
             },
             {
                 id        : "003",
-                photo     : "images/re3.jpg",
+                photo     : "/images/re3.jpg",
                 text      : "RE 3"
             },
             {
                 id        : "004",
-                photo     : "images/re4.jpg",
+                photo     : "/images/re4.jpg",
                 text      : "RE 4"
             },
             {
                 id        : "005",
-                photo     : "images/re5.jpg",
+                photo     : "/images/re5.jpg",
                 text      : "RE5"
             },
             {
                 id        : "006",
-                photo     : "images/re6.jpg",
+                photo     : "/images/re6.jpg",
                 text      : "RE 6"
             },
             {
                 id        : "007",
-                photo     : "images/re7.jpg",
+                photo     : "/images/re7.jpg",
                 text      : "RE 7"
             }
         ];
