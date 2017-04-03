@@ -3,7 +3,7 @@ Angular 2 version of the Frameslider component.
 
 ### Considering Contributing?
 
-Read our contributing guidelines and become a contributing member of Angular UI Tree!
+Feel free to make a pull request if you feel you have something to contribute to. Just please read the guidelines first.
 
 [CONTRIBUTING](https://github.com/WilldelaVega777/angular-frameslider/blob/master/CONTRIBUTING.md)
 
