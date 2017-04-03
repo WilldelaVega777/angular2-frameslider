@@ -103,10 +103,11 @@ export class FramesliderComponent implements OnInit {
     public buttonHeight                                                : number;
     public selectedButtonId                                            : string;
     public readingMouse                                                : boolean = false;
-    public scrollOffset                                                : number  = 0;
+    public scrollOffset                                                : number  = 2;
     public animationDirection                                          : number;
     public animationType                                               : number;
-    public _x                                                          : number;
+    public initializing                                                : boolean = true;
+    public _x                                                          : number = 20;
     public _y                                                          : number;
 
  
@@ -181,6 +182,7 @@ export class FramesliderComponent implements OnInit {
     public fs_mouseout() : void
     {
         this.readingMouse = false;
+        this.initializing = false;
     }
 
     //----------------------------------------------------------------------------------------------
@@ -295,7 +297,7 @@ export class FramesliderComponent implements OnInit {
     //----------------------------------------------------------------------------------------------
     private doAnimation() : void
     {
-        if (this.readingMouse)
+        if ((this.readingMouse) || (this.initializing == true))
         {
             // Determines Motion
             this.calculateScroll(IN_MOTION);
